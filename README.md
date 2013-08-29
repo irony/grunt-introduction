@@ -23,10 +23,11 @@ Skapa Gruntfile.js
 
       };
 
-## Googla grunt concat
+## Googla bibliotek du vill lägga in, t ex grunt concat:
 
-npm install grunt-contrib-concat --save-dev
+      $ npm install grunt-contrib-concat --save-dev
 
+Lägg in task i Gruntfile.js
 
       grunt.initConfig({
 
@@ -40,6 +41,8 @@ npm install grunt-contrib-concat --save-dev
       });
 
       grunt.loadNpmTasks('grunt-contrib-concat');
+
+Testa genoom att skriva ´grunt concat´
 
 
 ## Installera grunt-contrib-watch
