@@ -1,8 +1,15 @@
 Hur sätter man upp Grunt?
 ====
 
-En liten instruktion för att sätta upp Grunt med vanligaste uppgifterna.
+Snabbkurs i vad Grunt är och hur man snabbt kommer igång. Av Christian Landgren
 
+## Varför bry sig?
+  1. Det tar tid att hålla ordning på struktur
+  2. Kvaliteten blir bättre när man kan göra releaser ofta
+  3. Snabbare upplevelse för besökaren
+  4. Javascript är ett otypat språk, man har ingen syntaxkoll i kompilering
+
+  Vad är alternativet??
 
 ## Installera grunt
 
