@@ -129,9 +129,15 @@ Byter ut inkluderade filer i index.html mot ihopslagna filer. Fördelen är att 
 
 
 ### Uglify
-Minifierar och optimerar all källkod. Körs lämpligtvis efter usemin.
+Minifierar och optimerar alla javascript. Körs lämpligtvis efter usemin som förbereder denna och cssmin
 
 [uglify-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+
+
+### Cssmin
+Minifierar och optimerar alla stylesheet. Körs lämpligtvis efter usemin som förbereder denna baserat på innehållet i index.html
+
+[grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
 
 ### S3
 Automatiskt publicerar filer till S3 för snabb leverans. Alla filer kan även gzippas innan de laddas upp till s3.
@@ -158,7 +164,7 @@ Genererar manifestfil automatiskt. Alla filer som definieras i manifestet kommer
         dest: 'application.appcache'
       }
     },
-```
+``
 
 ### Grunt-install-dependencies
 Kör `npm install` som ett jobb i grunt. Fördelen är att man då bara behöver uppdatera packages.json när man har nya bibliotek och att `grunt deploy` kan köras själv i deploymentscript. Obs - lite catch22 innan man kört `npm install -g grunt-instal-depencies` på byggservern.
