@@ -4,15 +4,7 @@ Hur sätter man upp Grunt?
 En liten instruktion för att sätta upp Grunt med vanligaste uppgifterna.
 
 
-## Installera nodejs och express?
-
-
-      npm install express
-      express .
-      npm install
-
-
-## Installera grunt?
+## Installera grunt
 
       npm install -g grunt-cli
       npm install  grunt
