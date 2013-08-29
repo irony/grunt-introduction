@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           angular: true
         }
       },
-      all: ['public/**/*.js']
+      all: ['public/javascripts/*.js']
     },
 
     uglify: {

@@ -107,7 +107,7 @@ Byter ut inkluderade filer i index.html mot ihopslagna filer. Fördelen är att 
     <!-- endbuild -->
 ```
 
-``` json
+``` javascript
     copy: {
         main: {
             files: [
@@ -141,7 +141,7 @@ Automatiskt publicerar filer till S3 för snabb leverans. Alla filer kan även g
 Genererar manifestfil automatiskt. Alla filer som definieras i manifestet kommer cachas till att manifestet ändras. Dvs till nästa release.
 [grunt-manifest](https://github.com/gunta/grunt-manifest)
 
-``` json
+``` javascript
     manifest: {
       generate: {
         options: {
