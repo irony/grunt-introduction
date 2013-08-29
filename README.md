@@ -130,16 +130,19 @@ Byter ut inkluderade filer i index.html mot ihopslagna filer. Fördelen är att 
 
 ### Uglify
 Minifierar och optimerar all källkod. Körs lämpligtvis efter usemin.
+
 [uglify-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
 
 ### S3
 Automatiskt publicerar filer till S3 för snabb leverans. Alla filer kan även gzippas innan de laddas upp till s3.
+
 [grunt-s3](https://github.com/pifantastic/grunt-s3)
 
 
 
 ### Grunt-manifest
 Genererar manifestfil automatiskt. Alla filer som definieras i manifestet kommer cachas till att manifestet ändras. Dvs till nästa release.
+
 [grunt-manifest](https://github.com/gunta/grunt-manifest)
 
 ``` javascript
@@ -161,3 +164,9 @@ Genererar manifestfil automatiskt. Alla filer som definieras i manifestet kommer
 Kör `npm install` som ett jobb i grunt. Fördelen är att man då bara behöver uppdatera packages.json när man har nya bibliotek och att `grunt deploy` kan köras själv i deploymentscript. Obs - lite catch22 innan man kört `npm install -g grunt-instal-depencies` på byggservern.
 
 [grunt-install-dependencies](https://github.com/ahutchings/grunt-install-dependencies)
+
+
+### Grunt-mocha
+Mocha är ett testverktyg för javascript. Genom att köra testerna automatiserat i bakgrunden får du reda på när något smäller. Grunt-mocha kan både köra server- och klienttester. 
+
+[grunt-mocha](https://github.com/kmiyashiro/grunt-mocha)
