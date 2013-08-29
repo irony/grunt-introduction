@@ -158,7 +158,7 @@ Genererar manifestfil automatiskt. Alla filer som definieras i manifestet kommer
         dest: 'application.appcache'
       }
     },
-``
+```
 
 ### Grunt-install-dependencies
 Kör `npm install` som ett jobb i grunt. Fördelen är att man då bara behöver uppdatera packages.json när man har nya bibliotek och att `grunt deploy` kan köras själv i deploymentscript. Obs - lite catch22 innan man kört `npm install -g grunt-instal-depencies` på byggservern.
