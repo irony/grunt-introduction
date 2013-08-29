@@ -9,12 +9,13 @@ En liten instruktion för att sätta upp Grunt med vanligaste uppgifterna.
 
       npm install express
       express .
-
-
-
       npm install
+
+
+## Installera grunt?
+
       npm install -g grunt-cli
-      npm install 
+      npm install  grunt
 
 Skapa Gruntfile.js
 
@@ -43,14 +44,14 @@ Lägg in task i Gruntfile.js
 
       grunt.loadNpmTasks('grunt-contrib-concat');
 
-Testa genoom att skriva `grunt concat`
+Testa genoom att skriva `grunt concat` - nu ska alla filer som läggs i javascript automatiskt bli ihopslagna.
 
 
 ## Installera grunt-contrib-watch
 
       watch: {
           scripts: {
-            files: 'public/**/*.js',
+            files: ['Gruntfile.js', 'public/**/*.js', 'views/*.jade'],
             tasks: ['concat'],
             options: {
               interrupt: true,
